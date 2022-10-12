@@ -1,0 +1,141 @@
+/*General PROPERTIES*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  background-color: hsla(203, 44%, 93%, 0.813);
+  margin: 0 auto;
+  padding: 7rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: 63.5rem;
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.seg {
+  padding: 3.5rem 2.5rem;
+}
+.heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+/*SEGMENT 1 PROPERTIES*/
+
+.seg1 {
+  background-color: #fff;
+  grid-column: 1/-1;
+}
+.seg1-heading {
+  color: hsl(179, 66%, 45%);
+}
+.seg1-subheading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: inline-block;
+  color: hsl(71, 72%, 62%);
+  margin-bottom: 1.5rem;
+}
+
+.seg1-text {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 1.8;
+  color: rgba(152, 166, 189, 0.832);
+}
+
+/*SEGMENT 2 PROPERTIES*/
+.seg2 {
+  background-color: hsl(179, 66%, 45%);
+  padding: 2.5rem 2rem;
+}
+.seg2-heading {
+  color: hsl(204, 43%, 93%);
+}
+.price-plan {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.price {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: hsl(203, 44%, 100%);
+}
+.time-period {
+  font-size: 1.5rem;
+  color: hsla(203, 44%, 93%, 0.715);
+}
+.seg2-text {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 2rem;
+}
+
+.btn:link,
+.btn:visited {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.823);
+  display: block;
+  background-color: hsl(71, 72%, 62%);
+  text-align: center;
+  padding: 1.5rem 9.5rem;
+  border-radius: 5px;
+  box-shadow: 0 0 1rem rgba(51, 51, 51, 0.32);
+}
+
+/*SEGMENT 3 PROPERTIES*/
+.seg3 {
+  background-color: hsl(179, 53%, 51%);
+  padding: 2.5rem 2rem;
+}
+
+.seg3-heading {
+  color: hsl(204, 43%, 93%);
+}
+
+.features-list {
+  list-style: none;
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.665);
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+@media (max-width: 40em) {
+  .card {
+    min-width: 31rem;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 1fr;
+  }
+  .seg1-text,
+  .seg2-text {
+    font-size: 1.4rem;
+  }
+} ;
